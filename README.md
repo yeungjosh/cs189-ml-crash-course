@@ -11,24 +11,19 @@ CS 189 covers theoretical foundations, algorithms, and applications of machine l
 ## Repository Structure
 
 ```
-modules/           # Crash course content by topic
-├── 01-foundations/
-├── 02-linear-regression/
-├── 03-classification/
-├── 04-neural-networks/
-├── 05-unsupervised/
-├── 06-deep-learning/
-└── 07-advanced-topics/
+modules/           # Crash course content by topic (one README per module)
+├── 01-foundations/        # available
+├── 02-linear-regression/  # available
+├── 03-classification/     # available
+├── 04-neural-networks/    # available
+├── 05-unsupervised/       # planned
+├── 06-deep-learning/      # planned
+└── 07-advanced-topics/    # planned
 
-assignments/       # Homework guides and explanations
-├── hw1-linear-models/
-├── hw2-classification/
-├── hw3-neural-nets/
-├── hw4-unsupervised/
-└── hw5-deep-learning/
-
-resources/         # Reference materials and links
+resources/         # cheatsheet.md and links.md
 ```
+
+Modules 5-7 and the homework guides (`assignments/`) listed below are outlines for future work and do not exist in the repo yet.
 
 ## Learning Path
 
@@ -78,7 +73,7 @@ resources/         # Reference materials and links
 - Model interpretability
 - Deployment considerations
 
-## Assignments
+## Assignments (planned outlines)
 
 ### HW1: Linear Models
 Implement regression from scratch, experiment with regularization.
@@ -107,16 +102,14 @@ CNNs for image classification (CIFAR-10), experiment with architectures.
 
 ```bash
 # Clone repo
-git clone [repo-url]
+git clone https://github.com/yeungjosh/cs189-ml-crash-course.git
+cd cs189-ml-crash-course
 
 # Install dependencies
 pip install numpy scipy matplotlib scikit-learn torch torchvision
 
-# Start with Module 1
-cd modules/01-foundations
-
-# Try notebooks
-jupyter notebook
+# Start with Module 1: read modules/01-foundations/README.md
+# (modules contain Markdown guides with code snippets; there are no notebooks yet)
 ```
 
 ## Resources

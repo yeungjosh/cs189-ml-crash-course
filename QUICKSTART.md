@@ -62,11 +62,11 @@ This crash course assumes junior SWE knowledge: data structures, algorithms, Pyt
 - Train networks on MNIST, CIFAR-10
 
 **Weeks 7-8**: Unsupervised Learning
-- Module 5: K-means, PCA, EM
+- Module 5: K-means, PCA, EM (planned; not yet in this repo, see README)
 - Dimensionality reduction projects
 
 **Weeks 9-10**: Deep Learning
-- Module 6: CNNs, RNNs, Transformers
+- Module 6: CNNs, RNNs, Transformers (planned; not yet in this repo, see README)
 - Read seminal papers
 - Implement architectures
 
@@ -85,7 +85,7 @@ This crash course assumes junior SWE knowledge: data structures, algorithms, Pyt
 **Must follow**:
 1 → 2 → 3 → 4
 
-**Can do in parallel after 4**:
+**Can do in parallel after 4** (modules 5 and 6 are planned and not yet written; see `modules/` for what exists):
 5 (Unsupervised), 6 (Deep Learning)
 
 ## Daily Practice (30-60 min)

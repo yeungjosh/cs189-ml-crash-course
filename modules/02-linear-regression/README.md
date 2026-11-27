@@ -204,7 +204,7 @@ class RidgeRegression:
         return X_bias @ self.w
 
 # Compare OLS vs Ridge
-X = np.random.randn(50, 20)  # 20 features, 50 samples (p > n)
+X = np.random.randn(50, 20)  # 20 features, 50 samples (n > p, but few samples per feature)
 w_true = np.concatenate([np.random.randn(5), np.zeros(15)])  # Sparse true weights
 y = X @ w_true + np.random.randn(50) * 0.5
 
@@ -221,7 +221,7 @@ X_test = np.random.randn(100, 20)
 y_test = X_test @ w_true + np.random.randn(100) * 0.5
 
 print(f"OLS Test MSE: {ols.mse(X_test, y_test):.4f}")
-print(f"Ridge Test MSE: {ridge.predict(X_test); np.mean((y_test - ridge.predict(X_test))**2):.4f}")
+print(f"Ridge Test MSE: {np.mean((y_test - ridge.predict(X_test))**2):.4f}")
 
 # Plot weights
 plt.figure(figsize=(12, 4))
